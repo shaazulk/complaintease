@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints Portal</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        // Function to fetch the latest announcement
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("fetch_latest_announcement.php")
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        document.getElementById("announcement-title").textContent = data.title;
+                        document.getElementById("announcement-content").textContent = data.content;
+                        document.getElementById("announcement-details").textContent =
+                            `By ${data.created_by} on ${data.created_at}`;
+                    } else {
+                        document.getElementById("announcement-section").innerHTML = "<p>No announcements available.</p>";
+                    }
+                })
+                .catch(error => {
+                    console.error("Error fetching the announcement:", error);
+                    document.getElementById("announcement-section").innerHTML = "<p>Failed to load announcement.</p>";
+                });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Complaints Portal</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Latest Announcement Section -->
+        <section id="announcement-section">
+            <h2>Latest Announcement</h2>
+            <div class="announcement-box">
+                <h3 id="announcement-title">Loading...</h3>
+                <p id="announcement-content"></p>
+                <p id="announcement-details"></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 ComplaintEase. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

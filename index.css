@@ -1,0 +1,68 @@
+/* General container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header h1 {
+    text-align: center;
+    color: #ff5f09; /* Orange */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    background-color: #89CFF0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff5f09;
+    color: #fff;
+}
+
+/* Announcement section styles */
+#announcement-section {
+    background-color: #fdfdfd; /* Light background */
+    border: 3px solid #89CFF0; /* Baby blue border */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Emphasized shadow */
+}
+
+.announcement-box {
+    padding: 15px;
+    background-color: #fff; /* White for content */
+    border: 2px solid #ff5f09; /* Orange */
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-box h3 {
+    text-align: center;
+    color: #000; /* Black text */
+}

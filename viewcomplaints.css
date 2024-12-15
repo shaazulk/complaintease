@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e8ee;
+    color: #000000;
+}
+
+/* Container for the content */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff5f09;
+    color: #ffffff;
+}
+
+td a {
+    color: #89CFF0;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: #ff5f09;
+}
+
+/* Home button styling */
+.home-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-button a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #89CFF0;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.home-button a:hover {
+    color: #ffffff;
+    background-color: #ff5f09;
+}
+
+/* Search and filter form styling */
+form {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input,
+form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 250px;
+    max-width: 100%;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #ff5f09; /* Orange border when focused */
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #89CFF0; /* Baby blue background */
+    color: #000000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff5f09; /* Orange background on hover */
+    color: #ffffff; /* White text on hover */
+}
+/* Footer Styling */
+footer {
+    text-align: center; /* Center text horizontally */
+    margin-top: 30px; /* Add margin to separate it from the content */
+    padding: 20px 0; /* Add some padding to give it breathing space */
+    background-color: #ffffff; /* Optional: Make the footer background match the page */
+    font-size: 14px;
+    color: #000000;
+}
+
+footer p {
+    margin: 0; /* Remove extra margin */
+    font-weight: bold;
+}
+
+/* Home button styling (Make sure there's space between the button and footer) */
+.home-button {
+    margin-bottom: 30px; /* Ensure there is space between the button and footer */
+}

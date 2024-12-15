@@ -1,0 +1,81 @@
+/* General container styling */
+.dashboard-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 2px solid #89CFF0; /* Baby blue border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header styles */
+header h1 {
+    text-align: center;
+    color: #ff5f09; /* Orange color */
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between form elements */
+}
+
+form label {
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #89CFF0; /* Baby blue focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(137, 207, 240, 0.7); /* Baby blue glow */
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 150px; /* Default height */
+}
+
+/* Button styling */
+button.btn,
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff; /* White text */
+    background-color: #ff5f09; /* Orange background */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.btn:hover,
+a.btn:hover {
+    background-color: #000000; /* Black background on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

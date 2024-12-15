@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - ComplaintEase</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Register for ComplaintEase</h1>
+        </header>
+
+        <section class="content">
+            <form action="register_process.php" method="POST" class="register-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Account type selection (Admin or Student) -->
+                <label for="accountType">Account Type:</label>
+                <select id="accountType" name="accountType" required>
+                    <option value="">Select Account Type</option>
+                    <option value="admin">Admin</option>
+                    <option value="student">Student</option>
+                </select>
+
+                <!-- Admin ID input (visible always, but will be validated server-side) -->
+                <label for="staffID">Staff ID (if Admin):</label>
+                <input type="text" id="staffID" name="staffID" placeholder="Enter Staff ID">
+
+                <!-- Student ID input (visible always, but will be validated server-side) -->
+                <label for="studentID">Student ID (if Student):</label>
+                <input type="text" id="studentID" name="studentID" placeholder="Enter Student ID">
+
+                <!-- Password field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <!-- Confirm Password field -->
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </section>
+
+        <div class="home-button">
+            <a href="index.html" class="btn">Home</a> <!-- Consistent button styling -->
+        </div>
+
+        <footer>
+            <p>&copy; 2024 ComplaintEase. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

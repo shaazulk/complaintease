@@ -1,0 +1,96 @@
+/* styles/register.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e8ee;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    color: #ff5f09;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    text-decoration: none;
+    color: #000000; /* Black text */
+    background-color: #89CFF0; /* Baby Blue background */
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff5f09; /* Orange background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+.accountFields {
+    margin-bottom: 20px;
+}
+
+.home-button {
+    margin-top: 30px;
+}
+
+.home-button .btn {
+    text-decoration: none;
+    color: #000000; /* Black text */
+    background-color: #89CFF0; /* Baby Blue background */
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-button .btn:hover {
+    background-color: #ff5f09; /* Orange background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #000000;
+}
+
+footer p {
+    font-weight: bold;
+}
